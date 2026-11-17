@@ -1,0 +1,18 @@
+Week 5 - Student Information System
+Name: Alqurashy Yaseen tareq ghalep
+
+1. Why are the variables declared as private?
+The variables are declared as private so they can only be accessed inside the
+Student class. This protects the student data (encapsulation), so other classes
+cannot change the Student ID, Name or CGPA directly by mistake.
+
+2. What happens if the variables are declared public?
+If the variables are public, any other class can access and change them directly,
+for example s1.cgpa = 10.0; This means there is no control or validation on the
+data, and the data is not secure anymore.
+
+3. Why do we use getters and setters?
+We use setters to give values to the private variables and getters to read them.
+They are the only way to access the private data from outside the class, so we
+can control how the data is changed (for example, check that the CGPA is between
+0.00 and 4.00 before saving it). This is called encapsulation.
