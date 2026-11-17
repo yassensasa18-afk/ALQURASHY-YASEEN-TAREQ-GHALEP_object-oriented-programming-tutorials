@@ -1,35 +1,11 @@
-// Attributes
-class Student {
-    String name;
-    int age;
-    double gpa;
+class Student extends Person {
 
-
-
-    // Constructor: To store the values from users
-    Student(String studentName, int studentAge, double studentGpa) {
-        name = studentName;
-        age = studentAge;
-        gpa = studentGpa;
+    public Student(String name, String id) {
+        super(name, id);
     }
 
-
-    // Methods
-    public void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("GPA: " + gpa);
+    @Override
+    public void introduce() {
+        System.out.println("I am a student.");
     }
-
-    // Another Methods
-    public void study() {
-        System.out.println(name + " is studying.");
-    }
-
-    // Yet Another Methods
-    public void takeExam() {
-        System.out.println(name + " is taking an exam.");
-    }
-
-
 }
